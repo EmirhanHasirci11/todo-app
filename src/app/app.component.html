@@ -7,7 +7,7 @@
             <label for="work">Set a job</label>
             <input type="text" class="form-control" [ngClass]="ChangeInputClass()" id="work" for="work" [(ngModel)]="work">
             <div class="invalid-feedback">
-                Lütfen bir değer giriniz
+                Please enter at least 1 character.
             </div>
             <div class="form-group">
                 <button [disabled]="work.length<=0" (click)="Save()" class="btn btn-outline-success my-sm-3 w-100">Save</button>
